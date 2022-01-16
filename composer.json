@@ -1,0 +1,16 @@
+{
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "navid",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "classmap": ["src/"]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  }
+}
