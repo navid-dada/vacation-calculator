@@ -67,7 +67,6 @@ class Employee
 
     public function getExperience(int $currentYear) : Experience{
         $contractYear = $this->contractStartDate->format('Y');
-        $referenceDate = new \DateTime();
         if ($contractYear === $currentYear){
             $referenceDate = new \DateTime($currentYear."-12-30");
         }

@@ -1,5 +1,4 @@
 <?php
-//require '../../autoload.php';
 use Model\Employee;
 use PHPUnit\Framework\TestCase;
 
