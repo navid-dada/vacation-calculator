@@ -25,10 +25,10 @@ $employees = array(
 
 $calculator = new VacationCalculator();
 $calculator
-    ->AddPolicy(new ExperienceCalculatePolicy())
-    ->AddPolicy(new AgeCalculatePolicy());
+    ->addPolicy(new ExperienceCalculatePolicy())
+    ->addPolicy(new AgeCalculatePolicy());
 
 foreach ($employees as $employee){
-    $vacationCount  = $calculator->CalculateVacation($employee, $currentYear);
+    $vacationCount  = $calculator->calculateVacation($employee, $currentYear);
     echo $employee->getName() . ' has '. $vacationCount . ' days vacations.'.PHP_EOL;
 }

@@ -7,7 +7,7 @@ use Model\Employee;
 class AgeCalculatePolicy implements ICalculatePolicy
 {
 
-    function Apply(Employee $employee, int $currentYear): float
+    function apply(Employee $employee, int $currentYear): float
     {
         $cycles =intval($employee->getExperience($currentYear)->getYear()/5);
         if ($employee->getAge($currentYear) >= 30){

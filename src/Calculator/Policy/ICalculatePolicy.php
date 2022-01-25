@@ -6,5 +6,5 @@ use Model\Employee;
 
 interface ICalculatePolicy
 {
-    function Apply(Employee $employee, int $currentYear):float;
+    function apply(Employee $employee, int $currentYear):float;
 }

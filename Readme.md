@@ -9,7 +9,8 @@ This app is a console application to calculate the employees vacations based on 
 
 ### Run 
 
-> php src/vaccal.php [GIVEN_YEAR]
+> cd src
+> php vaccal.php [GIVEN_YEAR]
 
 ### test 
 

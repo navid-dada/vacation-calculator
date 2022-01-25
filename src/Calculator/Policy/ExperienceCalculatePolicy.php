@@ -7,7 +7,7 @@ use Model\Employee;
 class ExperienceCalculatePolicy implements ICalculatePolicy
 {
 
-    function Apply(Employee $employee, int $currentYear): float
+    function apply(Employee $employee, int $currentYear): float
     {
         $experience = $employee->getExperience($currentYear) ;
         if($experience->getYear() > 0){

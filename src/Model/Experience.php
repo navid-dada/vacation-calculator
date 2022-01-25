@@ -29,7 +29,7 @@ class Experience
         return $this->month;
     }
 
-    public static function Newcomer () : Experience{
+    public static function newcomer () : Experience{
         return new Experience(0,0);
     }
 }

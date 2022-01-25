@@ -12,20 +12,15 @@ class VacationCalculator
      */
     private $policies = [] ;
 
-    public function __construct()
-    {
-
-    }
-
-    public function AddPolicy(ICalculatePolicy $policy): VacationCalculator{
+    public function addPolicy(ICalculatePolicy $policy): VacationCalculator{
         $this->policies[] = $policy;
         return $this;
     }
 
-    public function CalculateVacation(Employee $employee, int $givenYear){
+    public function calculateVacation(Employee $employee, int $givenYear){
         $base = 0.0;
         foreach ($this->policies as $policy){
-            $base+= $policy->Apply($employee, $givenYear);
+            $base+= $policy->apply($employee, $givenYear);
         }
         return $base;
     }
